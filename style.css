@@ -22,21 +22,19 @@ body {
     box-shadow: 0 0 20px #6a4c93;
 }
 
-/* Анимации текста */
-.typing-text {
-    border-right: 2px solid #c792ea;
-    white-space: pre-wrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: blinkCursor 0.7s infinite;
+h1 {
+    color: #c792ea;
+    text-shadow: 0 0 5px #6a4c93;
+    font-family: 'Cinzel Decorative', cursive;
 }
 
-@keyframes blinkCursor {
-    from { border-right-color: transparent; }
-    to { border-right-color: #c792ea; }
+.text-box p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
 }
 
-/* Стили для фото */
 .photo-img {
     max-width: 100%;
     border-radius: 10px;
@@ -50,7 +48,13 @@ body {
     100% { box-shadow: 0 0 25px rgba(255, 119, 168, 0.8); }
 }
 
-/* Кнопка музыки */
+.final-message p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #ff77a8;
+    text-shadow: 0 0 5px rgba(255, 119, 168, 0.5);
+}
+
 #musicBtn {
     position: fixed;
     bottom: 20px;
@@ -58,10 +62,23 @@ body {
     background: rgba(106, 76, 147, 0.7);
     border: none;
     color: white;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 100;
+}
+
+.typing-text {
+    border-right: 2px solid #c792ea;
+    white-space: pre-wrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blinkCursor 0.7s infinite;
+}
+
+@keyframes blinkCursor {
+    from { border-right-color: transparent; }
+    to { border-right-color: #c792ea; }
 }
 
 .hidden {
