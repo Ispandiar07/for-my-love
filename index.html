@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Для тебя...</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,7 +16,8 @@
         </div>
         
         <div class="photo hidden" id="photo">
-            <img src="images/our-flower.jpg" alt="Наш цветок" class="photo-img">
+            <!-- Вот исправленная строка с путём: -->
+            <img src="./images/our-flower.jpg" alt="Наш цветок" class="photo-img">
             <div class="final-message">
                 <p class="typing-text" id="line1"></p>
                 <p class="typing-text" id="line2"></p>
@@ -26,9 +27,9 @@
     </div>
 
     <audio id="bgMusic" loop>
-        <source src="audio/reflection.mp3" type="audio/mpeg">
+        <source src="./audio/reflection.mp3" type="audio/mpeg">
     </audio>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
