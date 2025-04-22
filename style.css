@@ -22,60 +22,21 @@ body {
     box-shadow: 0 0 20px #6a4c93;
 }
 
-h1 {
-    color: #c792ea;
-    text-shadow: 0 0 5px #6a4c93;
-    font-family: 'Cinzel Decorative', cursive;
+/* Анимации текста */
+.typing-text {
+    border-right: 2px solid #c792ea;
+    white-space: pre-wrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blinkCursor 0.7s infinite;
 }
 
-.text-box p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin: 1.5rem 0;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
+@keyframes blinkCursor {
+    from { border-right-color: transparent; }
+    to { border-right-color: #c792ea; }
 }
 
-.text-box p.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-button {
-    background: #6a4c93;
-    color: #e0e0e0;
-    border: none;
-    padding: 0.7rem 1.5rem;
-    font-family: 'MedievalSharp', cursive;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    border-radius: 5px;
-    margin-top: 1rem;
-    opacity: 0;
-}
-
-button.visible {
-    opacity: 1;
-}
-
-button:hover {
-    background: #c792ea;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #c792ea;
-}
-
-.photo {
-    margin-top: 2rem;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.photo.visible {
-    opacity: 1;
-}
-
+/* Стили для фото */
 .photo-img {
     max-width: 100%;
     border-radius: 10px;
@@ -89,29 +50,18 @@ button:hover {
     100% { box-shadow: 0 0 25px rgba(255, 119, 168, 0.8); }
 }
 
-.final-message p {
-    font-size: 1.1rem;
-    margin: 1rem 0;
-    color: #ff77a8;
-    text-shadow: 0 0 3px rgba(255, 119, 168, 0.7);
-}
-
-#line2 {
-    color: #c792ea;
-    font-weight: bold;
-}
-
-.typing-text {
-    border-right: 2px solid #c792ea;
-    white-space: pre-wrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: blinkCursor 0.7s infinite;
-}
-
-@keyframes blinkCursor {
-    from { border-right-color: transparent; }
-    to { border-right-color: #c792ea; }
+/* Кнопка музыки */
+#musicBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(106, 76, 147, 0.7);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
 }
 
 .hidden {
